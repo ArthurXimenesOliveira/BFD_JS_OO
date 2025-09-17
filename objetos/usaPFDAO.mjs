@@ -5,7 +5,7 @@ import PFDAO from './pessoas/DAOs/PFDAO.mjs';          // 03 // Importa a DAO qu
 
 import Endereco from './pessoas/Endereco.js';          // 04 // Importa a classe Endereco
 import Telefone from './pessoas/Telefone.js';          // 05 // Importa a classe Telefone
-//import Titulo from './pessoas/Titulo.js';          // 05 // Importa a classe Telefone
+import Titulo from './pessoas/Titulo.js';          // 05 // Importa a classe Telefone
 import IE from './pessoas/IE/IEclss.js';                // 06 // Importa a classe Inscrição Estadual (IE)
 
 // ========== Criação do objeto PJ ==========
