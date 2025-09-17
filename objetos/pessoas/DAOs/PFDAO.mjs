@@ -42,7 +42,7 @@ export default class PFDAO {                        // 05 // Declara classe PJDA
         numero: this.#pf.getIE().getNumero(),
         zona: this.#pf.getIE().getZona(),
         secao: this.#pf.getIE().getSecao(),
-      },
+      }
     };
   }
 
