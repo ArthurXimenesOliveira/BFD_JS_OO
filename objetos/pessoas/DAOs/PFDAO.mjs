@@ -39,9 +39,9 @@ export default class PFDAO {                        // 05 // Declara classe PJDA
         dataRegsitro: this.#pf.getIE().getDataRegistro(),
       },
       titulo: {
-        numero: this.#pf.getIE().getNumero(),
-        zona: this.#pf.getIE().getZona(),
-        secao: this.#pf.getIE().getSecao(),
+        numero: this.#pf.getTitulo().getNumero(),
+        zona: this.#pf.getTitulo().getZona(),
+        secao: this.#pf.getTitulo().getSecao(),
       }
     };
   }
