@@ -38,11 +38,11 @@ export default class PFDAO {                        // 05 // Declara classe PJDA
         estado: this.#pf.getIE().getEstado(),
         dataRegsitro: this.#pf.getIE().getDataRegistro(),
       },
-      // titulo: {
-      //   numero: this.#pf.getIE().getNumero(),
-      //   zona: this.#pf.getIE().getZona(),
-      //   secao: this.#pf.getIE().getSecao(),
-      // }
+      titulo: {
+        numero: this.#pf.getIE().getNumero(),
+        zona: this.#pf.getIE().getZona(),
+        secao: this.#pf.getIE().getSecao(),
+      },
     };
   }
 

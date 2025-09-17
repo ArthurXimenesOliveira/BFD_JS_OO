@@ -35,11 +35,11 @@ fone2.setNumero("99999-7777");                          // 25
 pf.addTelefone(fone2);                                  // 26
 
 
-// const titulo = new Titulo();
-// titulo.setNumero("123456");
-// titulo.setZona("Zona1");
-// titulo.getSecao("Secao1");
-// pf.setTitulo(titulo);
+const titulo = new Titulo();
+titulo.setNumero("123456");
+titulo.setZona("Zona1");
+titulo.getSecao("Secao1");
+pf.setTitulo(titulo);
 
 
 
