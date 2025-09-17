@@ -27,20 +27,20 @@ class PF extends Pessoa {
   // 10: Relacionamento 1 - 1 com a classe Titulo
   #titulo;
 
-  // 11:
-  setTitulo(titulo) {
-    if (titulo instanceof Titulo) {
-      this.#titulo = titulo;
-      titulo.setPF(this); // referência cruzada
-      return true;
-    } else {
-      return false;
-    }
-  }
-  // 12:
-  getTitulo() {
-    return this.#titulo;
-  }
+  
+  // setTitulo(titulo) {
+  //   if (titulo instanceof Titulo) {
+  //     this.#titulo = titulo;
+  //     titulo.setPF(this); // referência cruzada
+  //     return true;
+  //   } else {
+  //     return false;
+  //   }
+  // }
+  
+  // getTitulo() {
+  //   return this.#titulo;
+  // }
 
   #ie;  // Atributo privado para armazenar objeto do tipo IE
 
