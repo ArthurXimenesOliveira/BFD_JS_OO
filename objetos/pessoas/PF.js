@@ -31,7 +31,7 @@ class PF extends Pessoa {
   setTitulo(titulo) {
     if (titulo instanceof Titulo) {
       this.#titulo = titulo;
-      titulo.setPF(this); // referência cruzada
+      titulo.addPF(this); // referência cruzada
       return true;
     } else {
       return false;
