@@ -25,8 +25,8 @@ class PF extends Pessoa {
     return this.#cpf;
   }
   // 10: Relacionamento 1 - 1 com a classe Titulo
-  #titulo;
-
+  
+  //#titulo;
   
   // setTitulo(titulo) {
   //   if (titulo instanceof Titulo) {
