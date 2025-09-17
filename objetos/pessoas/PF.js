@@ -4,7 +4,7 @@
 // 04:
 const Pessoa = require('./Pessoa');
 // 05:
-//const Titulo = require('./Titulo');
+const Titulo = require('./Titulo');
 // 06:
 const IE = require('./IE/IEclss');
 
