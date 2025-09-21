@@ -25,9 +25,13 @@ export default class AlunoDAO {                        // 05 // Declara classe P
     }
 
     return {                                        // 17 // Retorna objeto literal que representa todos os dados relevantes da PJ
+      matricula: this.#aluno.getMatricula(),
+      curso: this.#aluno.getCurso(), 
+      pf :{
       nome: this.#aluno.getNome(),
       email: this.#aluno.getEmail(),
       cpf: this.#aluno.getCPF(),
+      },
       endereco: {
         logradouro: this.#aluno.getEndereco().getLogradouro(),
         cep: this.#aluno.getEndereco().getCep(),

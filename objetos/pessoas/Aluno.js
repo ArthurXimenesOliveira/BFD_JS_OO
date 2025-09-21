@@ -3,6 +3,7 @@
 //     Objetivo do exemplo: demonstrar conceitos de Herança, bem como encapsulamento adicionados de condicionais utilizando operadores lógicos
 // 02:
 const PF = require('./PF');
+const IE = require('./IE/IEclss');
 // 03:
 class Aluno extends PF {
   // 04:
@@ -48,6 +49,25 @@ class Aluno extends PF {
   // 15:
   getCurso() {
     return this.#curso;
+  }
+
+  #ie;  // Atributo privado para armazenar objeto do tipo IE
+
+// 22
+  setIE(ie) {
+    // 23
+    if (ie instanceof IE) {             // Verifica se o parâmetro é instância da classe IE
+      this.#ie = ie;
+      ie.setAluno(this);                   // Referência cruzada (IE também aponta para este PJ)
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+// 24
+  getIE() {
+    return this.#ie;                    // Retorna o objeto IE relacionado
   }
 }
 // 16:
