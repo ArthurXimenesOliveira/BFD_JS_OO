@@ -69,6 +69,22 @@ class Aluno extends PF {
   getIE() {
     return this.#ie;                    // Retorna o objeto IE relacionado
   }
+
+  #pf;
+  
+  setPF(pf) {
+    if (pf instanceof PF) {
+      this.#pf = pf;
+      pf.setAluno(this); // referência cruzada
+      return true;
+    } else {
+      return false;
+    }
+  }
+  
+  getPF() {
+    return this.#pf;
+  }
 }
 // 16:
 module.exports = Aluno;
