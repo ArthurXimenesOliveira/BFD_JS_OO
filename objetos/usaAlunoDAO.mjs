@@ -1,13 +1,13 @@
 // 01 // código construído na pasta "/pessoas/usaPJDAO.mjs"
 
-import PF from './pessoas/PF.js';                      // 02 // Importa a classe Pessoa Jurídica
+import Aluno from './pessoas/Aluno.js';
 import AlunoDAO from './pessoas/DAOs/AlunoDAO.mjs';          // 03 // Importa a DAO que manipula objetos PJ
 
+import PF from './pessoas/PF.js';                      // 02 // Importa a classe Pessoa Jurídica
 import Endereco from './pessoas/Endereco.js';          // 04 // Importa a classe Endereco
 import Telefone from './pessoas/Telefone.js';          // 05 // Importa a classe Telefone
 import Titulo from './pessoas/Titulo.js';          // 05 // Importa a classe Telefone
 import IE from './pessoas/IE/IEclss.js';                // 06 // Importa a classe Inscrição Estadual (IE)
-import Aluno from './pessoas/Aluno.js';
 
 const aluno = new Aluno();
 aluno.setMatricula("20001234"); 
