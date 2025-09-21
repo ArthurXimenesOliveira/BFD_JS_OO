@@ -1,5 +1,6 @@
 const PJ = require('../PJ');
 const PF = require('../PF');
+const Aluno = require('../Aluno');
 
 const IE = {
   numero: null,
@@ -7,6 +8,7 @@ const IE = {
   dataRegistro: null,
   pj: null,
   pf: null,
+  aluno: null,
 
   setNumero: function(numero){
     if(numero){
@@ -65,5 +67,17 @@ const IE = {
 
   getPf: function(){
     return this.pf;
+  },
+
+  setAluno: function(aluno){
+    if(aluno instanceof Aluno){
+      this.aluno = aluno;
+      return true
+    }
+    return false;
+  },
+
+  getAluno: function(){
+    return this.aluno;
   },
 }

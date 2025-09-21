@@ -1,5 +1,6 @@
 const PJ = require('../PJ');
 const PF = require('../PF');
+const Aluno = require('../Aluno');
 
 function IE() {
   let dados = {
@@ -8,6 +9,7 @@ function IE() {
     dataRegistro: null,
     pj: null,
     pf: null,
+    aluno: null,
   };
   
   function setNumero(numero) {
@@ -59,5 +61,15 @@ function IE() {
   }
 
   function getPf(){return dados.pf}
+
+  function setAluno(aluno) {
+    if (aluno) {
+      dados.aluno = aluno;
+      return true;
+    }
+    return false;
+  }
+
+  function getAluno(){return dados.aluno}
 
 }
