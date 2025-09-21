@@ -4,6 +4,7 @@
 
 const PJ = require('../PJ');               // 04 // Importa a classe PJ (Pessoa Jurídica)
 const PF = require('../PF');               // 04 // Importa a classe PJ (Pessoa Jurídica)
+const Aluno = require('../Aluno');
 
 class IE {                                 // 05 // Declara a classe IE (Inscrição Estadual)
   #numero;                                 // 06 // Atributo privado para o número da IE
@@ -73,5 +74,20 @@ class IE {                                 // 05 // Declara a classe IE (Inscri�
   getPF(){                                // 40
     return this.#pf;                      // 41 // Retorna o objeto PJ associado
   }
+
+  #aluno;
+
+  setAluno(aluno){                              // 34 // Associa um objeto PJ à IE
+    if(aluno){                               // 35 // Validação: objeto não pode ser vazio
+      this.#aluno = aluno;                      // 36
+      return true;                        // 37
+    }else{                                // 38
+      return false;                       // 39
+    }
+  }
+  getAluno(){                                // 40
+    return this.#aluno;                      // 41 // Retorna o objeto PJ associado
+  }
+  
 
 } module.exports = IE;                    // 42 // Exporta a classe para uso externo (CommonJS)
