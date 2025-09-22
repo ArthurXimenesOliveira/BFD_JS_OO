@@ -70,20 +70,20 @@ class Aluno extends PF {
     return this.#ie;                    // Retorna o objeto IE relacionado
   }
 
-  #pf;
+  #pf1;
   
-  setPF(pf) {
-    if (pf instanceof PF) {
-      this.#pf = pf;
-      pf.setAluno(this); // referência cruzada
+  setPF1(pf1) {
+    if (pf1 instanceof PF) {
+      this.#pf1 = pf1;
+      pf1.setAluno(this); // referência cruzada
       return true;
     } else {
       return false;
     }
   }
   
-  getPF() {
-    return this.#pf;
+  getPF1() {
+    return this.#pf1;
   }
 }
 // 16:
